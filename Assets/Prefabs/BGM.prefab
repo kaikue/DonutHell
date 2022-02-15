@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5834011148399292377}
   - component: {fileID: 8758674330184170289}
+  - component: {fileID: 5639358894340067144}
   m_Layer: 0
   m_Name: BGM
   m_TagString: Untagged
@@ -41,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cec43358cc7273249ad8451ab154500f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -127,3 +128,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5639358894340067144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65226012652491654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c6f25edd2de9443924082eb518c981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introClip: {fileID: 8300000, guid: 438523dfaa30b7044a555844c1d588f5, type: 3}
+  loopClip: {fileID: 8300000, guid: ac69dde7bede93e488a70aa78eaaf9e5, type: 3}

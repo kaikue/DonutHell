@@ -542,6 +542,12 @@ public class Player : MonoBehaviour
             refill.Use();
 			PlaySound(refillSound);
         }
+
+        SwitchMusic switchMus = collider.GetComponent<SwitchMusic>();
+        if (switchMus != null && !switchMus.triggered)
+        {
+            switchMus.Switch();
+        }
     }
 
     private void Damage()

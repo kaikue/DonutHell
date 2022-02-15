@@ -8,11 +8,19 @@ Concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/
 
 ## TODO
 
-- mechanics (test):
-	- sugar walls respawn on death
-	- cycles reset on death
+- music
+	- title: scrapland
+	- fields: 2neons (fix loop?)
+	- swamp: silver
+	- chocolate: blue garnet
+	- heaven: revive luvs (vocals come in for later section)
+	- ending: potential
+- warning screen with link
+	- Application.OpenURL("https://kaikue.itch.io/donut-heaven");
 - interrupt jumps/dashes/dives with other moves
 - level 1
+	- dash then turn back in midair
+	- small jump so you don't hit your head (after dash)
 - level 2
 	- repeated dash up jelly wall with spikes close on other side
 	- dribble on bouncer while waiting for something
@@ -26,6 +34,7 @@ Concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/
 - level 4
 	- jumps on small gaps in spike-covered platform
 	- dribble on donut bouncer sliding back and forth
+	- vocals trigger for later section
 	- ending: can get killed in walk up- spikes with small gap moving up & down that you have to time, sugar wall blocking gap that you have to break underneath
 
 ## Controls
@@ -65,12 +74,8 @@ Concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/
 	- Hits by Independent.nu: https://opengameart.org/content/37-hitspunches
 	- Angel happy sound made with sfxr: https://www.drpetter.se/project_sfxr.html
 - Music:
-	- Happy Trip to Mars by Alex McCulloch: https://opengameart.org/content/happy-trip-to-mars
-	- Spectacle Carousel by 3xBlast: https://opengameart.org/content/spectacle-carousel
-	- A New Day by SpiderDave: https://opengameart.org/content/a-new-day
-	- The Journey Continues by Ivan Stanton (northivanastan): https://opengameart.org/content/the-journey-continues
-	- Prismatic Light by tcarisland: https://opengameart.org/content/prismatic-light
-	- Friends by Josh McKay: https://opengameart.org/content/friends-0
+	- Scrapland menu theme by Danielus: https://opengameart.org/content/scrapland-menu-theme
+	- Other music by ISAo (SOUND AIRYLUVS): https://airyluvs.com
 - Font: Montserrat https://www.fontsquirrel.com/fonts/montserrat
 
 ## Extra Ideas

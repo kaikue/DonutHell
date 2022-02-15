@@ -1151,6 +1151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BGM
       objectReference: {fileID: 0}
+    - target: {fileID: 5639358894340067144, guid: 74e3476b28203294980259a2a8b7e438, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5834011148399292377, guid: 74e3476b28203294980259a2a8b7e438, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1196,9 +1200,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8758674330184170289, guid: 74e3476b28203294980259a2a8b7e438, type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8758674330184170289, guid: 74e3476b28203294980259a2a8b7e438, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 17b58196b33b415428d731eb665d13bf, type: 3}
+      objectReference: {fileID: 8300000, guid: c1c053b3486cbbc48afb60a70109fc68, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74e3476b28203294980259a2a8b7e438, type: 3}
 --- !u!1 &2106698022
