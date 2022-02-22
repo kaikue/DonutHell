@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
     private const float jumpBufferTime = 0.1f; //time before hitting ground a jump will still be queued
     private const float jumpGraceTime = 0.1f; //time after leaving ground player can still jump (coyote time)
 
-    private Transform respawnPoint;
+    private Checkpoint activeCheckpoint;
     private Breakable[] breakables;
     private Mover[] movers;
 
@@ -89,12 +89,14 @@ public class Player : MonoBehaviour
     public AudioClip[] dashSounds;
     public AudioClip refillSound;
     public AudioClip collectSound;
+    public AudioClip checkpointSound;
     public AudioClip[] smashSounds;
     public AudioClip bounceSound;
 
     public GameObject transitionPlayerPrefab;
     public GameObject hurtPlayerPrefab;
     public GameObject endingPlayerPrefab;
+    public GameObject checkpointParticlePrefab;
 
     private void Start()
     {
@@ -512,10 +514,17 @@ public class Player : MonoBehaviour
         }
 
         Checkpoint checkpoint = collider.GetComponent<Checkpoint>();
-        if (checkpoint != null)
+        if (checkpoint != null && checkpoint != activeCheckpoint)
 		{
-            respawnPoint = checkpoint.respawnPoint;
-		}
+            if (activeCheckpoint != null)
+            {
+                activeCheckpoint.Deactivate();
+                PlaySound(checkpointSound, false);
+                Instantiate(checkpointParticlePrefab, checkpoint.respawnPoint.position, Quaternion.identity);
+            }
+            activeCheckpoint = checkpoint;
+            activeCheckpoint.Activate();
+        }
 
         CollectibleSprinkle sprinkle = collider.GetComponent<CollectibleSprinkle>();
         if (sprinkle != null)
@@ -552,6 +561,7 @@ public class Player : MonoBehaviour
 
     private void Damage()
     {
+        persistent.deaths++;
         ScreenShake();
         GameObject hurtPlayerObj = Instantiate(hurtPlayerPrefab, transform.position, Quaternion.identity);
         HurtPlayer hurtPlayer = hurtPlayerObj.GetComponent<HurtPlayer>();
@@ -566,7 +576,7 @@ public class Player : MonoBehaviour
         StopSlamming();
         dashCountdown = 0;
         rb.velocity = Vector2.zero;
-        rb.position = respawnPoint.transform.position;
+        rb.position = activeCheckpoint.respawnPoint.position;
         foreach (Breakable breakable in breakables)
 		{
             if (breakable.resetOnDeath)

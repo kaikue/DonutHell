@@ -9,6 +9,7 @@ public class PersistentTracker : MonoBehaviour
     public int sprinkles = 0;
     public int possibleSprinkles = 0;
     public float time = 0;
+    public float deaths = 0;
 
     private void Awake()
     {

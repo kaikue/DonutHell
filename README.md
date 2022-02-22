@@ -1,24 +1,15 @@
 # Donut Hell
 
-"The ANGELS of PLANET EA█T█ are a lot sweeter than you'd think! Help FALLEN ANGEL SPRINKLE on a delicious and divine adventure to get back home to DONUT HEAVEN."
+You've reached [DONUT HEAVEN](https://kaikue.itch.io/donut-heaven)... can you conquer Donut Hell?
 
-For AGBIC 2021: https://itch.io/jam/a-game-by-its-cover-2021
+Extra-challenging "B-Side" levels for [Donut Heaven](https://kaikue.itch.io/donut-heaven). Playing that game first is highly recommended.
 
-Concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/21/softs/010.html
+"Donut Heaven" concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/21/softs/010.html
 
 ## TODO
 
-- music
-	- title: scrapland
-	- fields: 2neons (fix loop?)
-	- swamp: silver
-	- chocolate: blue garnet
-	- heaven: revive luvs (vocals come in for later section)
-	- ending: potential
-- warning screen with link
-	- Application.OpenURL("https://kaikue.itch.io/donut-heaven");
 - interrupt jumps/dashes/dives with other moves
-- level 1
+- level 1 (fix music loop?)
 	- dash then turn back in midair
 	- small jump so you don't hit your head (after dash)
 - level 2
@@ -36,6 +27,8 @@ Concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/
 	- dribble on donut bouncer sliding back and forth
 	- vocals trigger for later section
 	- ending: can get killed in walk up- spikes with small gap moving up & down that you have to time, sugar wall blocking gap that you have to break underneath
+
+- post-release: add DHell link to DHeav itch page, website
 
 ## Controls
 
@@ -72,91 +65,9 @@ Concept by baku ([@bakumoe](https://twitter.com/bakumoe)): https://famicase.com/
 	- Portal Idle by couchHero: https://freesound.org/people/couchHero/sounds/168910/
 	- Transport by tim.kahn: https://freesound.org/people/tim.kahn/sounds/128587/
 	- Hits by Independent.nu: https://opengameart.org/content/37-hitspunches
+	- OKAY! by Scrampunk: https://freesound.org/people/Scrampunk/sounds/345299/
 	- Angel happy sound made with sfxr: https://www.drpetter.se/project_sfxr.html
 - Music:
 	- Scrapland menu theme by Danielus: https://opengameart.org/content/scrapland-menu-theme
 	- Other music by ISAo (SOUND AIRYLUVS): https://airyluvs.com
 - Font: Montserrat https://www.fontsquirrel.com/fonts/montserrat
-
-## Extra Ideas
-
-- Levels
-	- Frosted Fields
-	- Jelly Swamp
-	- Chocolate Mountain
-	- Donut Heaven
-		- Introduce dash refill crystal?
-		- chain together lots of flying moves?
-- Improve jump candy art?
-- Lerp in/out slam swoosh sound?
-- Set particles at ending zone?
-- Extra mechanics
-	- Enemies
-		- Movement patterns
-			- Walk back and forth on platform- turn around if hit wall or edge
-			- Walk along all edges of platform
-		- Slam/dash combat
-			- Bounce away only for enemies with multiple HP
-	- Recharge all crystals whenever touching ground?
-	- Show collected sprinkles (some total in each level)
-- Art
-	- Level
-		- Cotton candy bouncy clouds
-		- Double jump refill candy (improve)
-		- Decorations
-			- Swirly brown sticks
-			- Peppermint swirls
-	- Enemies
-		- Jelly slime
-		- Licorice spiky bug
-		- other candy demon guys
-	- Cutscenes
-		- Intro cutscene
-		- Boss conversation
-		- End cutscene
-	- Gray out wings if can't double jump, gray out donut halo if can't dash (separate out donut halo, duplicate fall/slam/dash sprites)
-	- Player start slam animation
-- Sound
-	- Add earthquake rumble to slam loop?
-	- Walk (step)
-	- Enemy
-- Juice
-	- Slam particles come from collision point
-		- take color of terrain?
-	- Dash start effect
-	- More dash/slam trail effects?
-- Levels
-	- Level 1- Frosted Fields
-		- Terrain- light brown gingerbread with pink/blue frosting; donuts; light blue background with hills
-		- Introduce jump
-		- Introduce double jump
-		- Introduce static hazards
-		- Introduce bouncers
-	- Level 2- Jelly Swamp (patches of bouncy floor)
-		- Terrain- dark brown with light brown frosting; all-red jelly patches; purple background with trees
-		- Introduce slam break floor
-		- Introduce slam bounce (on jelly floors)
-		- Introduce combat
-	- Level 3- Lollipop Forest (lollipop & candycane trees)
-		- Terrain- pink with dark brown frosting, pink background with trees
-		- Introduce slam bounce (on round bouncers)
-		- Introduce falling hazards
-		- Introduce double jump refill
-	- Level 4- Cake Cliffs
-		- Terrain- red with white frosting, blue-green background with cake mountains
-		- Introduce dash
-		- Introduce dash break wall
-		- Introduce dash combat?
-		- Introduce dash bounce
-		- Introduce dash refill crystal
-	- another level if I have time
-	- Level 5- Chocolate Mountain (vertical climb, lava rivers)
-		- Terrain- brown chocolate squares; dark brown lava rivers, yellow background
-		- Dash through multiple barriers hanging off ceiling
-	- Level 6- Donut Heaven
-		- Outside terrain- cotton candy clouds, donuts, dark blue space background w/ stars (music: Soliloquy)
-		- Inside terrain- dark brown with pink frosting, light brown walls (music: Heroic Demise)
-		- Castle
-		- Boss- Lord Licorice
-	- keep momentum- speedrun routes
-	- secret sprinkles in early levels where you have to use future mechanics

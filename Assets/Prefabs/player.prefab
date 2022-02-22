@@ -279,6 +279,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 35880717f213be5458f50914b8398b77, type: 3}
   refillSound: {fileID: 8300000, guid: f8fad320608108e4f8e12d8f084c50ea, type: 3}
   collectSound: {fileID: 8300000, guid: 9d122d5dde387b44d8ec82991ecf8273, type: 3}
+  checkpointSound: {fileID: 8300000, guid: ecd803b58b83e2e48a8bef2e592d507f, type: 3}
   smashSounds:
   - {fileID: 8300000, guid: d0168082ed418dc4c9f5f5f212121cc0, type: 3}
   - {fileID: 8300000, guid: 7bdcb1cd99c3a0e4dabf956c447dea7c, type: 3}
@@ -286,6 +287,7 @@ MonoBehaviour:
   transitionPlayerPrefab: {fileID: 5892390428603229384, guid: 5f0927e17820e1c4fbef606cc2e85e36, type: 3}
   hurtPlayerPrefab: {fileID: 5892390428603229384, guid: 68e0e5206d9d11843993b3ce0378d040, type: 3}
   endingPlayerPrefab: {fileID: 7242435792563174227, guid: f5bfdee587002864baf2b2030722078c, type: 3}
+  checkpointParticlePrefab: {fileID: 7458156744028028041, guid: 0d1cca3f5e3d9254886ef56f44f90d89, type: 3}
 --- !u!199 &3709356144336040272
 ParticleSystemRenderer:
   serializedVersion: 6

@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074923eb17f58c747ab2bab245d87990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprinklesText: {fileID: 1696291175}
+  deathsText: {fileID: 1696291175}
   timeText: {fileID: 1581455441}
   bonus: {fileID: 2130365789}
 --- !u!1 &646468593
@@ -5585,7 +5585,7 @@ GameObject:
   - component: {fileID: 1696291176}
   - component: {fileID: 1696291175}
   m_Layer: 5
-  m_Name: sprinkles
+  m_Name: deaths
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5630,7 +5630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sprinkles:
+  m_text: 'Deaths:
 
     0'
   m_isRightToLeft: 0

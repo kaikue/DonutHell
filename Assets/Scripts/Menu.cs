@@ -8,6 +8,7 @@ public class Menu : MonoBehaviour
 {
     public UnityEvent startEvent;
     public GameObject loadingScreenPrefab;
+    public GameObject warning;
 
 	private void Update()
 	{
@@ -26,6 +27,16 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         Instantiate(loadingScreenPrefab);
+    }
+
+    public void ShowWarning()
+	{
+        warning.SetActive(true);
+	}
+
+    public void PlayDonutHeaven()
+	{
+        Application.OpenURL("https://kaikue.itch.io/donut-heaven");
     }
 
     public void Quit()

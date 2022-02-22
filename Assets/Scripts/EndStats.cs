@@ -6,7 +6,8 @@ using UnityEngine;
 
 public class EndStats : MonoBehaviour
 {
-    public TextMeshProUGUI sprinklesText;
+    //public TextMeshProUGUI sprinklesText;
+    public TextMeshProUGUI deathsText;
     public TextMeshProUGUI timeText;
     public GameObject bonus;
 
@@ -14,12 +15,13 @@ public class EndStats : MonoBehaviour
     {
         bonus.SetActive(false);
         PersistentTracker persistent = FindObjectOfType<PersistentTracker>();
-        bool allSprinkles = persistent.sprinkles == persistent.possibleSprinkles;
+        /*bool allSprinkles = persistent.sprinkles == persistent.possibleSprinkles;
         if (allSprinkles)
         {
             bonus.SetActive(true);
         }
-        sprinklesText.text = "Sprinkles:\n" + persistent.sprinkles + (allSprinkles ? ("/" + persistent.possibleSprinkles) : "");
+        sprinklesText.text = "Sprinkles:\n" + persistent.sprinkles + (allSprinkles ? ("/" + persistent.possibleSprinkles) : "");*/
+        deathsText.text = "Deaths:\n" + persistent.deaths;
         TimeSpan timeSpan = TimeSpan.FromSeconds(persistent.time);
         string timeStr = string.Format("{0:D2}:{1:D2}.{2:D}", timeSpan.Minutes, timeSpan.Seconds, timeSpan.Milliseconds);
         timeText.text = "Time:\n" + timeStr;
